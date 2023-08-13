@@ -60,7 +60,7 @@ button {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -215,7 +215,7 @@ button {
 
 .studio-title {
     background-color: var(--dark-color);
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     max-width: 1440px;
@@ -227,12 +227,12 @@ button {
 
 .studio-title .title {
     color: var(--white-background-color);
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
-    letter-spacing: 1.12px;
+    letter-spacing: 1.11px;
     text-align: center;
     letter-spacing: 0.02em;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     max-width: 496px;
 }
 
@@ -267,17 +267,14 @@ button {
 /* List feature */
 
 .features {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .features-list {
     display: flex;
-    gap: 24px;
-}
-
-.list-item {
-    width: calc((100% - 3 * 24px) / 4)
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .features-item-top {
@@ -290,22 +287,24 @@ button {
     border-radius: 4px;
     border: none;
     margin-bottom: 8px;
+    display: none;
 }
 
 .list-title {
     color: var(--dark-color);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .list-text {
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--primary-font-color);
 }
 
 /* studio doing */
@@ -338,22 +337,27 @@ button {
 
 .studio-team {
     background-color: var(--light-color);
-    padding: 120px 0
+    padding: 96px 0
 }
 
 .team-list-title {
     text-align: center;
     margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .team-list-text {
     text-align: center;
+    font-weight: 400;
 }
 
 .studio-team-list {
     display: flex;
-    gap: 24px;
-
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: center;
 }
 
 .studio-team-worker {
@@ -362,7 +366,6 @@ button {
 
 .team-list {
     background-color: #FFFFFF;
-    width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -520,18 +523,19 @@ button {
 /* customers */
 
 .customers {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .customers-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 72px 16px;
 }
 
 .customers-item {
-    width: calc((100% - 120px) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
