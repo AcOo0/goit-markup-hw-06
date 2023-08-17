@@ -113,7 +113,7 @@ button {
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
-    letter-spacing: 0.54px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
@@ -738,6 +738,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+    margin: 0 auto;
 }
 
 .basement .logo-web {
@@ -751,9 +752,10 @@ button {
 }
 
 .basement .link {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .social-text {
@@ -762,24 +764,33 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFF;
+    margin: 0 auto;
     margin-bottom: 16px;
 }
 
 .wrap-basement {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .basement-left-side {
-    margin-right: 120px;
+    justify-content: center;
+    /* margin-right: 120px; */
+    margin-bottom: 72px;
 }
 
 .basement-center-side {
-    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 72px;
 }
 
 .basement-social-list {
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -804,20 +815,25 @@ button {
     background-color: var(--success-color);
 }
 
-.basement-right-side {}
+.basement-right-side {
+    display: flex;
+    flex-direction: column;
+}
 
 .basement-form {
     display: flex;
-    gap: 24px;
+flex-direction: column;
+    gap: 16px;
 }
 
-.basement-label {}
+.basement-label {
+}
 
 .basement-input {
-    width: 264px;
+    width: 100%;
     height: 40px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
     background-color: transparent;
     color: #FFFFFF;
     border-radius: 4px;
@@ -837,7 +853,8 @@ button {
 }
 
 .basement-subscribe-btn {
-    min-width: 165px;
+    margin: 0 auto;
+    max-width: 165px;
     padding: 8px 24px;
     background-color: var(--primary-brand-color);
     color: #fff;
