@@ -2,6 +2,20 @@
     .container {
         max-width: 426px;
     }
+
+    .mob-tel-list-link {
+         font-size: 36px;
+    }
+
+    .mob-social-list {
+        gap: 56px;
+    }
+
+    .studio-title .title {
+        font-size: 36px;
+    }
+
+
 }
 
 
