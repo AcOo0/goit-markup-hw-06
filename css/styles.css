@@ -895,7 +895,7 @@ flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scaleX(1);
-    width: 408px;
+    width: 320px;
     min-height: 584px;
     background-color: var(--primary-background-color);
     border-radius: 4px;
